@@ -22,7 +22,7 @@ client.on('message',async message => {
   if(message.channel.type === ' ') return;
  
   const args = message.content.split(' ');
-  const credits = require('./credits.json');
+  const credits = require('creditsCode.json');
   const path = './credits.json';
   const mention = message.mentions.users.first() || client.users.get(args[1]) || message.author;
   const mentionn = message.mentions.users.first() || client.users.get(args[1]);
